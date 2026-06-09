@@ -1,4 +1,6 @@
-# [fd]
+---
+title: [fd]
+---
 
 ![challenge](../images/fd/challenge.png)
 
