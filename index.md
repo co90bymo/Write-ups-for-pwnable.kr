@@ -1,5 +1,3 @@
-# pwnable.kr write-ups
-
 Welcome,
 
 This is a collection of write-ups for pwnable.kr challenges.
