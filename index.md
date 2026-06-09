@@ -1,4 +1,6 @@
-# Welcome
+---
+title: Welcome
+---
 
 This is a collection of my write-ups for pwnable.kr challenges.
 
