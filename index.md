@@ -1,8 +1,6 @@
-Welcome,
+# Welcome
 
-This is a collection of write-ups for pwnable.kr challenges.
-
-I’m going through them one by one, documenting how I solved each problem and what I learned along the way.
+This is a collection of my write-ups for pwnable.kr challenges.
 
 I use these write-ups to reinforce my understanding - writing things out forces me to think through what’s going on instead of just moving on after solving a challenge. And to also think about what did not work.
 
