@@ -16,7 +16,7 @@ Nothing fancy — just a way for me to learn properly and keep track of progress
 ## challenges
 
 - [fd](writeups/fd.md)
-- collision(writeups/collision.md)
+- [collision](writeups/collision.md)
 
 ---
 
