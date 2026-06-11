@@ -4,7 +4,7 @@ title: collision
 
 ![challengecol](../images/fd/challengecol.png)
 
-!NOT COMPLETE!
+**!NOT COMPLETE!**
 
 After ssh-ing, we use `ls -la` and see the same type of setup as in the [fd]-challenge (we have no permissions to read flag, but we can execute col, and we have readable code col.c)
 Let's inspect the code right away and see what we are supposed to do.
@@ -55,12 +55,14 @@ Because an int is 32bit (8 bytes), the actual value will wrap around, so our res
 As indicated by the author's message, this is basically just simulating a simple hash function. We are trying to find an input that gives us the same hash value that is stored in that Code. A collision is when two different inputs result in the same input (a != b -> hash(a) = hash (b)).
 
 
-Attempt #1:
+
+**Attempt #1:**
+
 First, I tried something like this. We can convert the problem into this equation: `res = A + B + C + D + E`. Let `A = B = C = D = A`, we get `res = A*4 + E <=>  res - A*4 = E`.
 All we need to do is select some A. And now, by simple arithmetic, we get a value for E. 
 But this doesn't work because not all ASCII Codes are characters we can type on our terminal. For example, if A = "A", then E = 0x1CD804E8. But 0x1C is "file separator" which is not a valid character.
 After trying different A, I found that none of the E are usable ASCII Codes.
 
-Attempt #2:
+**Attempt #2:**
 
 .. Working on it ..
