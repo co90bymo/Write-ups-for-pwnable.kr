@@ -73,6 +73,7 @@ Sure enough, this prints the flag and completes the challenge.
 Note: As of the time of this write-up, the server uses Python 3, where strings are Unicode rather than raw bytes. When printed, the character represented by \xe8 is typically encoded as UTF-8, which occupies 2 bytes (0xC3 0xA8) instead of 1. As a result, the payload length becomes 21 bytes instead of 20 and the challenge fails. Using sys.stdout.buffer.write() writes the raw bytes directly and avoids this issue. If your payload appears correct but still fails, this may be the reason
 
 **Alternative solution: Let Python handle endianness**
+
 You can also apply endianness using `struct.pack("<I",0x1DD905E8)`, so we can use this:
 `./col "$(python3 -c 'import sys,struct;sys.stdout.buffer.write(struct.pack("<I",0x01010101)*4 + struct.pack("<I",0x1DD905E8))')"`
 
